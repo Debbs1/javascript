@@ -1,34 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>JS TASK 3</title>
+  <title>JS TASK 3</title>
 </head>
 <body>
 
   <script> 
      function integerChecker(int){
-  let Array =[];
+  let integer_array =[];
    
    for (i=1; i<=int;i++)
    {
-    if (i%2==0){
-      Array.push("yu");}
-    else if (i%3==0){
-      Array.push("gi");}
-    else if (i%5==0){
-      Array.push("oh");}
+    if (i%2==0 && i%3==0 && i%5==0){
+      integer_array.push("yu-gi-oh");}
     else if (i%2==0 && i%3==0){
-      Array.push("yu-gi");}
-    else if (i%2==0 && i%5==0)
-      {Array.push("yu-oh");}
+      integer_array.push("yu-gi");}
     else if (i%3==0 && i%5==0) {
-      Array.push("gi-oh");}
-    else if (i%2==0 && i%3==0 && i%5==0){
-      Array.push("yu-gi-oh");}
-    else Array.push(i)
+      integer_array.push("gi-oh");}
+    else if (i%2==0 && i%5==0){
+        integer_array.push("yu-oh");}
+    else if (i%5==0){
+      integer_array.push("oh");}
+    else if (i%3==0){
+      integer_array.push("gi");}
+    else if (i%2==0){
+      integer_array.push("yu");}
+    else {integer_array.push(i)}
   }
-    return Array;
-  }   
+   return integer_array;
+   
+    console.log(integer_array)
+  } 
+   integerChecker(10);  
   </script>
 </body>
 </html>
