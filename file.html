@@ -6,35 +6,29 @@
 <body>
 
   <script> 
-     
- function integerChecker(int){
+     function integerChecker(int){
   let Array =[];
-	 return Array
-    console.log(Array)
+   
    for (i=1; i<=int;i++)
    {
-    if (i%2== 0) {
-      Array.push ("yu")}
-    elseif (i%3==0){
-      Array.push ("gi")}
-    elseif (i%5==0){
-      Array.push ("oh")}
-
-    elseif (i%2==0 && i%3==0) {
-      Array.push("yu-gi")}
-    elseif (i%2==0 && i%5==0){
-      Array.push("yu-oh")}
-    elseif (i%3==0 && i%5==0) {
-      Array.push("gi-oh")}
-    elseif (i%2==0 && i%3==0 && i%5==0){
-      Array.push("yu-gi-oh")}
-    else{return Array.push(i)};
-    
+    if (i%2==0){
+      Array.push("yu");}
+    else if (i%3==0){
+      Array.push("gi");}
+    else if (i%5==0){
+      Array.push("oh");}
+    else if (i%2==0 && i%3==0){
+      Array.push("yu-gi");}
+    else if (i%2==0 && i%5==0)
+      {Array.push("yu-oh");}
+    else if (i%3==0 && i%5==0) {
+      Array.push("gi-oh");}
+    else if (i%2==0 && i%3==0 && i%5==0){
+      Array.push("yu-gi-oh");}
+    else Array.push(i)
   }
- }
- integerChecker(100)
-    
+    return Array;
+  }   
   </script>
- }
 </body>
 </html>
