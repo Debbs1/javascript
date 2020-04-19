@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS TASK 3</title>
+</head>
+<body>
+
+  <script> 
+     
+ function integerChecker(int)  
+ {
+  let Array =[];
+   for (i=1; i<=int;i++)
+   {
+    if (i%2== 0) {
+      return Array.push ("yu")}
+    elseif (i%3==0){
+      return Array.push ("gi")}
+    elseif (i%5==0){
+      return Array.push ("oh")}
+
+    elseif (i%2==0 && i%3==0) {
+      return Array.push("yu-gi")}
+    elseif (i%2==0 && i%5==0){
+      return Array.push("yu-oh")}
+    elseif (i%3==0 && i%5==0) {
+      return Array.push("gi-oh")}
+    elseif (i%2==0 && i%3==0 && i%5==0){
+      return Array.push("yu-gi-oh")}
+    else{return Array.push(i)};
+    return Array
+    console.log(Array)
+  }
+ }
+ integerChecker(100)
+    
+  </script>
+ }
+</body>
+</html>
